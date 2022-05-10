@@ -1,0 +1,169 @@
+Question 1 : Accept the number from user and if it is even than display the square.
+
+import java.util.Scanner;
+
+public class firstprogram {
+    public static void main(String[] args) {
+        int num1, res;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        num1 = sc.nextInt();
+         if(num1%2==0){
+             res  = num1 * num1;
+             System.out.println("The number is even :"  +res);
+         }else{
+             System.out.println("The number is odd");
+         }
+    }
+}
+
+Question 2 : Accept the number form user and check if it is even or odd.
+
+
+import java.util.Scanner;
+public class Evenodd {
+    public static void main(String[] args) {
+        int num1;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number ");
+        num1 = sc.nextInt();
+
+        if (num1 % 2 == 0) {
+            System.out.println("Number entered is even");
+        }else{
+            System.out.println("The number is odd");
+        }
+    }
+}
+
+
+
+Question 3: Accept the character and check it is vovel or not.
+
+
+import java.util.Scanner;
+public class vovel {
+    public static void main(String[] args) {
+        char name;
+        Scanner sc =  new Scanner(System.in);
+        System.out.println("Enter the alphabet");
+         name = sc.next().charAt(0);
+          if(name=='a'){
+              System.out.println("The number is vovel");
+          }else if(name=='e'){
+              System.out.println("The number is vovel");
+          }else if(name=='i'){
+              System.out.println("The number is vovel");
+          }else if(name=='0'){
+              System.out.println("The number is vovel");
+          }else if(name=='u'){
+              System.out.println("The number is vovel");
+          }else{
+              System.out.println("The number is consonant");
+          }
+    }
+}
+
+
+Question 4: Perform Arithmetic operation.
+import java.util.Scanner;
+public class question4 {
+    public static void main(String[] args) {
+        int choice, num1, num2, res;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("1:+ \n 2: - \n 3: * \n 4: / \n 5: % \n ");
+        System.out.println("Enter your choices");
+        choice = sc.nextInt();
+
+        switch (choice){
+            case  1:
+                System.out.println("Enter the one number");
+                num1= sc.nextInt();
+                System.out.println("Enter the second number");
+                num2= sc.nextInt();
+                res = num1 + num2;
+                System.out.println("The sum of two numbers is : " + res);
+                break;
+            case 2:
+                System.out.println("Enter the one number");
+                num1= sc.nextInt();
+                System.out.println("Enter the second number");
+                num2= sc.nextInt();
+                res = num1 - num2;
+                System.out.println("The subraction of two numbers is : " + res);
+               break;
+
+
+
+            case 3:
+                System.out.println("Enter the one number");
+                num1= sc.nextInt();
+                System.out.println("Enter the second number");
+                num2= sc.nextInt();
+                res = num1 * num2;
+                System.out.println("The subraction of two numbers is : " + res);
+                break;
+
+
+            case 4 :
+                System.out.println("Enter the one number");
+                num1= sc.nextInt();
+                System.out.println("Enter the second number");
+                num2= sc.nextInt();
+                res = num1 / num2;
+                System.out.println("The answer : " + res);
+                break;
+
+            case 5 :
+                System.out.println("Enter the one number");
+                num1= sc.nextInt();
+                System.out.println("Enter the second number");
+                num2= sc.nextInt();
+                res = num1 % num2;
+                System.out.println("The modulo of two numbers is : " + res);
+                break;
+
+        }
+
+    }
+}
+
+
+
+QUESTION 5 : wap TO ACCEPT age and gender form user and display ri
+
+
+
+
+
+import java.util.Scanner;
+public class displayri {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age;
+        char gender;
+        System.out.println("Enter your gender");
+        gender = sc.next().charAt(0);
+        System.out.println("Enter your age");
+        age  = sc.nextInt();
+
+        System.out.println(gender);
+
+        if(gender == 'm' &&  age > 60) {
+            System.out.println("The RI is 7%");
+        }
+            if (gender == 'f' && age <60 ) {
+                System.out.println("The Ri is 7.5%");
+            }
+                if (gender == 'm' &&  age<60){
+                        System.out.println("The Ri is 5%");
+
+
+                }
+
+        else{
+            System.out.println("You have enterd invalid nummber");
+        }
+
+    }
+}
