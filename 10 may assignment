@@ -1,0 +1,35 @@
+Wap to take number from user and display the table
+
+
+import java.util.Scanner;
+public class tables {
+    public static void main(String[] args) {
+       int tableof;
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter the number to display the table");
+        tableof= sc.nextInt();
+        for(int i=1; i<=10; i++){
+            System.out.println(tableof * i);
+        }
+
+    }
+}
+
+
+wap to display the number from 873 to 23
+
+
+public class displaynumber {
+    public static void main(String[] args) {
+
+        int i;
+
+        for(i=876; i>=23; i--){
+            System.out.println(i);
+        }
+    }
+}
+
+
+
+
