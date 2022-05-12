@@ -1,0 +1,186 @@
+Q1 : Write a program to display the factorial fo number
+
+
+
+import java.util.Scanner;
+public class factorial 
+ {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        System.out.println("Enter the number to display the factorial ");
+        n = sc.nextInt();
+       int factorial =1;
+        for(int i= n; i>=1; i--)
+        {
+            factorial = factorial*i;
+        }
+        System.out.println(factorial);
+    }
+}
+
+Q2: WAP to accept ano from user and check it is prime or not
+
+
+import java.util.Scanner;
+public class primeorno
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int n ,flag=0;
+        System.out.println("Enter number to check whether the number is prime or not");
+        n= sc.nextInt();
+
+
+                if(n==0||n==1)
+                {
+                    System.out.println(n+" is not prime number");
+                }else
+                {
+                    for(int i=2;i<n/2;i++)
+                    {
+                        if(n%i==0){
+                            System.out.println(n+" is not prime number");
+                            flag=1;
+                          break;
+                        }
+                    }
+                    if(flag==0)  {
+                        System.out.println(n+" is prime number");
+                    }else{
+                        System.out.println("Number is composite number");
+                    }
+                }
+            }
+        }
+
+
+Q3:  WAP to accept a no from user and check it is armstrong or not
+
+
+import java.util.Scanner;
+public class amstrong {
+
+    public static void main(String[] args) {
+
+
+        int n=0, num1=0,r,p=0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number to check whether the number is amstorong or not");
+        n = sc.nextInt();
+        num1=n;
+            while (n > 0) {
+                r = n % 10;
+                p = p + r * r * r;
+                n = n / 10;
+            }
+            System.out.println("The cube is " + p);
+
+            if (num1 == p) {
+                System.out.println("It is a amstrong number");
+            } else {
+                System.out.println("Number is not an amstrong number");
+            }
+        }
+
+    }
+
+Q4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q5)WAP to display armstrongno between 1 to 1000
+
+import java.util.Scanner;
+public class demo1 {
+
+    public static void main(String[] args) {
+//Scanner sc = new Scanner(System.in);
+
+
+        int num=0,r,p=0 ,total=0;
+        Scanner sc = new Scanner(System.in);
+
+       System.out.println("display number formo 1 -1000");
+        for(int i=1; i<=1000; i++)
+        {
+            num=i;
+            while (num > 0)
+            {
+                r = num % 10;
+                total = total + r * r * r;
+                num = num / 10;
+            }
+//            System.out.println("The cube is " + p);
+
+            if (total == i) {
+                System.out.println("It is a amstrong number" +i);
+            }
+            total=0;
+        }
+
+    }
+}
+
+
+
+Q6)Write a program to accept a number from the user and then outputs the number with the digits reversed. For example, if the input is 12345, the output should be 54321.
+
+
+import java.util.Scanner;
+public class reversenumber {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int n ,r=0;
+        System.out.println("Enter the number to display the reverse number ");
+       n = sc.nextInt();
+
+       while(n!=0){
+            r =  n%10;
+           System.out.print( r);
+            n = n/10;
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
