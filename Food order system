@@ -22,12 +22,9 @@ public class foodorder {
                             amt =amt + 200*qt;
                         }else if(start_s==2){
                             System.out.println("Your Chicken lolipop will be served ");
-
-                            amt = amt + 300;
                             amt =amt + 200*qt;
                         }else if(start_s==3){
                             System.out.println("Your Chicken pahadi will be served ");
-                            amt = amt + 340;
                             amt =amt + 200*qt;
                         }else{
                             System.out.println("Please enter valid option");
@@ -48,15 +45,12 @@ public class foodorder {
                         qt = sc.nextInt();
                         if (main_m==1){
                             System.out.println("Your Chicken Biyani will be served ");
-//                            amt =amt + 700;
                             amt =amt + 700*qt;
                         }else if(main_m==2){
                             System.out.println("Your Chicken fried rice will be served");
-//                            amt =amt + 600;
                             amt =amt + 600*qt;
                         }else if(main_m==3){
                             System.out.println("Your butter chickne will be served");
-//                            amt =amt + 650;
                             amt =amt + 650*qt;
                         }else{
                             System.out.println("Please enter valid option");
@@ -75,15 +69,12 @@ public class foodorder {
                         qt  = sc.nextInt();
                         if(des_d == 1){
                             System.out.println("Your choclate icecream will be served");
-//                            amt =amt + 350;
                             amt =amt + 350*qt;
                         }else if(des_d == 2){
                             System.out.println("Your Mic icecream will be served");
-//                            amt =amt + 300;
                             amt =amt + 300*qt;
                         }else if(des_d == 3){
                             System.out.println("Your milshake will be served ");
-//                            amt =amt + 100;
                             amt =amt + 100*qt;
                         }
                         System.out.println("Do you want to add any other item \n  1: yes\n 2: no");
