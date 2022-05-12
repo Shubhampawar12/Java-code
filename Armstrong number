@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class amstrong {
+
+    public static void main(String[] args) {
+//Scanner sc = new Scanner(System.in);
+
+
+        int num, num1,r,p=0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number to check whether the number is amstorong or not");
+
+         num = sc.nextInt();
+         num1=num;
+         while(num>0){
+             r= num%10;
+             p = p+r*r*r;
+             num = num/10;
+         }
+         System.out.println("The cube is " +p);
+
+         if(num1 == p){
+             System.out.println("It is a amstrong number");
+         }else{
+             System.out.println("Number is not an amstrong number");
+         }
+
+
+    }
+}
