@@ -116,8 +116,6 @@ import java.util.Scanner;
 public class demo1 {
 
     public static void main(String[] args) {
-//Scanner sc = new Scanner(System.in);
-
 
         int num=0,r,p=0 ,total=0;
         Scanner sc = new Scanner(System.in);
@@ -132,7 +130,6 @@ public class demo1 {
                 total = total + r * r * r;
                 num = num / 10;
             }
-//            System.out.println("The cube is " + p);
 
             if (total == i) {
                 System.out.println("It is a amstrong number" +i);
@@ -172,8 +169,10 @@ Q7)Write a program that reads a set of integers, and then prints the sum of the 
 
 
 import java.util.Scanner;
-public class sumofevenodd {
-    public static void main(String[] args) {
+public class sumofevenodd 
+{
+    public static void main(String[] args)
+    {
     int n=0 , s=0,sum=0,sum_1=0;
          Scanner sc = new Scanner(System.in);
          System.out.println("Enter set of integer");
@@ -185,11 +184,9 @@ public class sumofevenodd {
                    arr[i] = sc.nextInt();
                    if(arr[i] %2==0){
                        sum = sum +arr[i];
-//                       System.out.println("Sum of even number is " +arr[i]);
                    }
                    else{
                        sum_1 = sum_1 + arr[i];
-//                       System.out.println("Sum of two number is " +arr[i]);
                    }
 
         }
