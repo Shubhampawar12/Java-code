@@ -149,7 +149,7 @@ public class secondlargets {
                 }
             }
         }
-        System.out.println("Third second largest number is:: "+array[size-2]);
+        System.out.println(" second largest number is:: "+array[size-2]);
     }
 }
 
