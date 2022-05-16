@@ -1,0 +1,161 @@
+Q1)Take an array of 10 elements. Split it into middle and store the elements in two dfferent arrays. 
+
+
+
+import java.util.Scanner;
+public class multiplicationarray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the base of squared matrices");
+        n = input.nextInt();
+        int[][] a = new int[n][n];
+        int[][] b = new int[n][n];
+        int[][] c = new int[n][n];
+        System.out.println("Enter the elements of 1st martix row wise \n");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                a[i][j] = input.nextInt();
+            }
+        }
+        System.out.println("Enter the elements of 2nd martix row wise \n");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                b[i][j] = input.nextInt();
+            }
+        }
+        System.out.println("Multiplying the matrices...");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                for (int k = 0; k < n; k++) {
+                    c[i][j] = c[i][j] + a[i][k] * b[k][j];
+                }
+            }
+        }
+        System.out.println("The product is:");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print(c[i][j] + " ");
+            }
+            System.out.println();
+        }
+        input.close();
+    }
+}
+
+
+Q2)Write a program to find the sum and product of all elements of an array.
+
+
+import java.util.Scanner;
+public class addmatirx1 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the dimensions");
+        int row = sc.nextInt();
+        int cols = sc.nextInt();
+
+        int a[][] = new int[row][cols];
+        int b[][] = new int[row][cols];
+        System.out.println("Enter " +row*cols + "number");
+        System.out.println("Enter array a");
+        for (int i=0; i<row ;i++){
+            for (int j=0; j<cols; j++){
+                a[i][j]= sc.nextInt();
+            }
+        }
+
+        for (int i=0; i<row ;i++){
+            for (int j=0; j<cols; j++){
+                System.out.print(a[i][j] + "\t");
+            }
+            System.out.println();
+        }
+        System.out.println("Enter array b");
+        for (int i=0; i<row ;i++){
+            for (int j=0; j<cols; j++){
+                b[i][j]= sc.nextInt();
+            }
+        }
+        for (int i=0; i<row ;i++){
+            for (int j=0; j<cols; j++){
+                System.out.print(b[i][j]  + "\t");
+            }
+            System.out.println();
+        }
+      System.out.println("The result is stored in c");
+        int c[][] = new int[row][cols];
+        for (int i=0; i<row ;i++){
+            for (int j=0; j<cols; j++){
+                c[i][j]= a[i][j] + b[i][j];
+            }
+        }
+        for (int i=0; i<row ;i++){
+            for (int j=0; j<cols; j++){
+           System.out.print(c[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+q3.Write a program to check whether the number is palindrome or not
+
+
+import java.util.Scanner;
+public class palindrome {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int n,sum=0,temp=0,r;
+        System.out.println("enter the number to check whether the number is palindrome or not");
+        n = sc.nextInt();
+      temp =n;
+        while(n>0){
+            r = n%10;
+            sum = (sum*10) + r;
+            n = n/10;
+
+        }
+        if (temp == sum){
+            System.out.println("The number is palindrome");
+        }else{
+            System.out.println("The nubber is not palindrome");
+        }
+    }
+}
+
+
+Q4 Write a program to find the second largest number in the arrray
+
+public class secondlargets {
+    public static void main(String[] args) {
+        int temp, size;
+        int array[] = {10, 20, 25, 63, 96, 57};
+        size = array.length;
+
+        for(int i = 0; i<size; i++ ){
+            for(int j = i+1; j<size; j++){
+
+                if(array[i]>array[j]){
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+        System.out.println("Third second largest number is:: "+array[size-2]);
+    }
+}
+
+
+
+
+
+
+
