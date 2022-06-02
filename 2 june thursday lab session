@@ -1,0 +1,25 @@
+1: Take 10 integers from the keyboard using loop nad print their average value on the screen.
+
+
+package method;
+
+import java.util.Scanner;
+
+public class average {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int arr[] = new int[11];
+        int sum =0, avg;
+        int i,j;
+        System.out.println("Enter the numbers ");
+        for (i=1;i<10; i++){
+            arr[i] = sc.nextInt();
+        }
+        for (j=1;j<10;j++){
+            sum +=arr[j];
+        }
+        avg = sum/10;
+        System.out.println("Average of 10 numbers is " +avg );
+    }
+}
