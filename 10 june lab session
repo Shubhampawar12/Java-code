@@ -1,0 +1,92 @@
+Q2.WAp to create a class reverse number second  class sum of digit third class use both property and display the output
+
+//class1
+package june7;
+
+import java.util.Scanner;
+
+public class scdemo {
+    public void reverseno() {
+
+
+        Scanner sc = new Scanner(System.in);
+        int n, r = 0;
+        System.out.println("Enter the number to display the reverse number ");
+        n = sc.nextInt();
+
+        while (n != 0) {
+            r = n % 10;
+            System.out.print(r);
+            n = n / 10;
+
+        }
+    }
+}
+//class2
+package june7;
+
+import java.util.Scanner;
+
+public class scdemo1
+{
+    public void sod(){
+        Scanner sc = new Scanner(System.in);
+        int n=0, res=0;
+        System.out.println("Enter the  number to find teh square of the digit");
+        n = sc.nextInt();
+        if (n>0){
+            res = n*n;
+            System.out.println("The square of the digit is " + res);
+        }
+    }
+
+}
+//class 3
+package june7;
+
+public class scdemo3 {
+    public static void main(String[] args) {
+        scdemo obj = new scdemo();
+        obj.reverseno();
+        scdemo1 no = new scdemo1();
+        no.sod();
+    }
+}
+
+WAP to create a class which contain the method palindrome the second class will use the property of the first class and display the output
+package inheritance;
+
+import java.util.Scanner;
+
+public class demo1 {
+    public void palindrome(){
+        Scanner sc = new Scanner(System.in);
+        int n,sum=0,temp=0,r;
+        System.out.println("enter the number to check whether the number is palindrome or not");
+        n = sc.nextInt();
+        temp =n;
+        while(n>0){
+            r = n%10;
+            sum = (sum*10) + r;
+            n = n/10;
+
+        }
+        if (temp == sum){
+            System.out.println("The number is palindrome");
+        }else{
+            System.out.println("The nubber is not palindrome");
+        }
+    }
+}
+//class2
+package inheritance;
+
+public class demomain  extends demo1{
+    public static void main(String[] args) {
+       demomain obj = new demomain();
+       obj.palindrome();
+
+    }
+
+}
+
