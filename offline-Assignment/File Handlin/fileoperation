@@ -1,0 +1,65 @@
+//create a new file,read and write the file,and delete the file
+package filejhandling;
+
+import java.io.*;
+
+import java.util.Scanner;
+
+public class Demo1 {
+	Scanner sc = new Scanner(System.in);
+	String nam,r;
+	String wrt;
+
+	public static void main(String[] args) throws IOException {
+		Demo1 obj1 = new Demo1();
+		obj1.create();
+		obj1.write();
+		obj1.read();
+		obj1.deletefile();
+	}
+	public void create() throws IOException {
+		System.out.println("Enter the file name");
+		nam= sc.nextLine();
+		File obj = new File(nam);
+		 r=obj.getAbsolutePath();
+		System.out.println(r);
+		if(obj.createNewFile()) {
+			System.out.println("File " + nam + " is created");
+		}else {
+			System.out.println("File "+ nam + " already exists");
+		}
+	}
+	public void write() throws IOException {
+		System.out.println("Write in the file");
+		wrt = sc.nextLine();
+		FileWriter ob= new FileWriter(nam);
+		ob.write(wrt);
+		ob.close();
+	}
+	public void read() throws FileNotFoundException {
+		System.out.println("You can read");
+		File f = new File(nam);
+		Scanner sc = new Scanner(f);
+		while(sc.hasNextLine())
+		{
+			String s = sc.nextLine();
+			System.out.println(s);
+		}
+		
+	}
+	public void deletefile() {
+		System.out.println("Enter the file name you want to delete");
+		nam =sc.nextLine();
+		File o = new File(nam);
+		boolean s=o.delete();
+		if(s) {
+			System.out.println(s + "file is deleted");
+		}
+		else {
+			System.out.println("File is not deleted");
+			
+		}
+	}
+	
+
+}
